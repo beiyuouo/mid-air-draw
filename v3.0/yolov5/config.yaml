@@ -1,0 +1,7 @@
+train: yolo_data/images/train
+val: yolo_data/images/validation
+nc: 4
+names: ['1',
+        '2',
+        '5',
+        'forefinger']

@@ -1,0 +1,12 @@
+python train.py --img 512 --batch 16 --epochs 100 --data config.yaml --cfg models/yolov5s.yaml --name yolo_example
+tensorboard --logdir runs/
+python detect.py --weights weights/best.pt --img 512 --conf 0.3 --source 0
+python detect.py --weights runs/exp12_yolo_example/weights/best.pt --img 512 --conf 0.15 --source 0
+python detect.py --weights runs/exp12_yolo_example/weights/best.pt --img 512 --conf 0.15 --source rtsp://192.168.0.106:8554/
+python detect.py --weights runs/exp12_yolo_example/weights/best.pt --img 512 --conf 0.15 --source http://192.168.0.106:8080/
+python detect.py --weights runs/exp12_yolo_example/weights/best.pt --img 512 --conf 0.15 --source http://192.168.43.46:8080/
+
+sudo raspivid -o - -rot 180 -t 0 -w 640 -h 480 -fps 30|cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8080}' :demux=h264  
+sudo raspivid -o - -rot 180 -t 0 -w 640 -h 360 -fps 30|cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8080}' :demux=h264  
+
+sudo raspivid -o - -rot 180 -t 0 -w 640 -h 360 -fps 25|cvlc -vvv stream:///dev/stdin --sout '#standard access=http,mux=ts,dst=:8090}' :demux=h264
