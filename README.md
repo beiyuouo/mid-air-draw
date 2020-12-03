@@ -6,7 +6,7 @@ Welcome to star this repo!
 
 Mid-air brush [<a href="https://www.bilibili.com/video/BV15V411a7WB">Demo</a>]
 
-README [<a href="README">EN</a>|<a href="README_CN">CN</a>]
+README [<a href="README.md">EN</a>|<a href="README_CN.md">CN</a>]
 
 ## Description
 
