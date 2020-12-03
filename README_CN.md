@@ -1,27 +1,27 @@
 ## Hi 👋
 
-Come here, don’t you star this progect? & Forgive my pool English.
+来都来了，不点个小星星吗？
 
-Welcome to star this repo!
+Welcome to star this repo
 
-Mid-air brush [<a href="https://www.bilibili.com/video/BV15V411a7WB">Demo</a>]
+凌空画笔 [<a href="https://www.bilibili.com/video/BV15V411a7WB">Demo</a>]
 
 README [<a href="README">EN</a>|<a href="README_CN">CN</a>]
 
 ## Description
 
-Mid-air gesture recognition and drawing, the default gesture 1 is a brush, gesture 2 is to change the color, and gesture 5 is to clear the drawing board
-Display based on OpenCV.
+凌空手势识别和绘制，默认手势1是画笔，手势2是更换颜色，手势5是清空画板
+显示基于OpenCV
 
 
 ## Change Log
 
 ### v3.0
 
-This version of the project is based on <a href="https://github.com/insigh1/GA_Data_Science_Capstone/">GA_Data_Science_Capstone</a>
+该版本项目基于<a href="https://github.com/insigh1/GA_Data_Science_Capstone/">GA_Data_Science_Capstone</a>
 
-Use Yolo_v5 to recognize gestures and index fingers for drawing. Please make your own gesture dataset and label them. Data preprocessing is in files 01 and 02.
-The project can be run on Raspberry Pi, use the Raspberry Pi to collect images and push them to the computer for reasoning, there is a delay.
+用Yolo_v5识别手势和食指进行绘制，请自行手势数据集并进行标注，数据预处理在01和02文件中
+该项目可移植到树莓派上运行，利用树莓派收集图像，推流到电脑进行推理，有延迟
 
 #### How to run
 
@@ -52,8 +52,8 @@ python detect.py --weights runs/exp12_yolo_example/weights/best.pt --img 512 --c
 
 ### v2.0
 
-Gesture recognition based on OpenCV and convex hull detection.
-Skin color detection + convex hull + number of contour lines (count the number of fingers).
+基于OpenCV和凸包检测的手势识别
+肤色检测+凸包+数轮廓线个数（统计手指数量）
 
 #### How to run
 
@@ -66,7 +66,7 @@ python gesture.py
 
 ### v1.0
 
-Skin color detection + convex hull based on OpenCV.
+基于OpenCV的肤色检测+凸包
 
 
 #### How to run
